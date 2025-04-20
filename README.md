@@ -22,7 +22,6 @@ Supabase(PostgreSQL)를 연동하여 실습 중심으로 개발 중입니다.
 - Spring Boot의 기본 구조 이해 및 실습  
 - MVC 아키텍처 기반 REST API 개발  
 - Supabase 클라우드 DB 연동  
-- 날짜 타입 `LocalDate`와 DB 타입 `date` 정확히 매핑  
 - JPA를 통한 DB 자동 생성 및 테스트  
 
 ---
