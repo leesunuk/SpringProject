@@ -78,10 +78,9 @@ spring.jpa.properties.hibernate.show_sql=true
 | 날짜       | 작업 내용                                                   |
 |------------|------------------------------------------------------------|
 | 2025-04-19 | Spring Boot 프로젝트 생성, 기본 구조 구성                   |
-| 2025-04-20 | Supabase DB 연동 완료, 날짜 필드 `LocalDate`로 매핑 설정    |
+| 2025-04-20 | Supabase DB 연동 완료                                      |
 |            | Supabase 테이블 생성 및 데이터 입력                         |
 |            | JPA Entity (`Item`, `Announcement`) 매핑 성공               |
-|            | index.html, list.html 연결 구성 테스트                      |
 
 ---
 
