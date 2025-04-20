@@ -109,4 +109,4 @@ cd SpringProject/study
 - [Spring Boot 공식 문서](https://spring.io/projects/spring-boot)
 - [Supabase Docs](https://supabase.com/docs)
 - [Baeldung - Spring Boot Guide](https://www.baeldung.com/)
-- [코딩애플 - 쉽게 배우는 Spring Boot & JPA] (https://codingapple.com/course/spring-boot-jpa/)
+- [코딩애플 - 쉽게 배우는 Spring Boot & JPA](https://codingapple.com/course/spring-boot-jpa/)
