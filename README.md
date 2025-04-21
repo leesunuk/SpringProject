@@ -11,6 +11,7 @@ Supabase(PostgreSQL)를 연동하여 실습 중심으로 개발 중입니다.
 - Spring Boot 3.x  
 - Gradle  
 - JPA (Hibernate)  
+- Lombok  
 - Supabase (PostgreSQL)  
 - IntelliJ IDEA  
 - DBeaver / Supabase SQL Editor  
@@ -23,6 +24,8 @@ Supabase(PostgreSQL)를 연동하여 실습 중심으로 개발 중입니다.
 - MVC 아키텍처 기반 REST API 개발  
 - Supabase 클라우드 DB 연동  
 - JPA를 통한 DB 자동 생성 및 테스트  
+- Lombok을 활용한 코드 간결화  
+- DB에 저장된 데이터를 웹 화면에 출력  
 
 ---
 
@@ -37,15 +40,19 @@ SpringProject/
 │       │   ├── java/
 │       │   │   └── com.study.study/
 │       │   │       ├── announcement              # 공지 엔티티
+│       │   │       ├── announcementRepository    # 공지 Repository
+│       │   │       ├── bookController.java       # 공지 목록 출력용 컨트롤러
 │       │   │       ├── BasicController.java      # 테스트용 컨트롤러
 │       │   │       ├── Item.java                 # 상품 엔티티
 │       │   │       ├── ItemController.java       # 상품 컨트롤러
+│       │   │       ├── ItemRepository.java       # 상품 Repository
 │       │   │       └── StudyApplication.java     # 메인 클래스
 │       │   └── resources/
 │       │       ├── static/
 │       │       │   └── index.html
 │       │       ├── templates/
-│       │       │   └── list.html
+│       │       │   ├── list.html
+│       │       │   └── book.html
 │       │       └── application.properties
 │       └── test/
 │           └── java/com.study.study/
@@ -67,8 +74,8 @@ spring.datasource.driver-class-name=org.postgresql.Driver
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.properties.hibernate.show_sql=true
+spring.datasource.hikari.maximum-pool-size=3
 ```
-
 
 ---
 
@@ -80,6 +87,8 @@ spring.jpa.properties.hibernate.show_sql=true
 | 2025-04-20 | Supabase DB 연동 완료                                      |
 |            | Supabase 테이블 생성 및 데이터 입력                         |
 |            | JPA Entity (`Item`, `Announcement`) 매핑 성공               |
+| 2025-04-21 | Lombok 적용 (`@Getter`, `@RequiredArgsConstructor`) 도입    |
+|            | 공지 데이터 `/book` 페이지에 출력 구현 (`book.html` 연결)   |
 
 ---
 
@@ -108,3 +117,4 @@ cd SpringProject/study
 - [Supabase Docs](https://supabase.com/docs)
 - [Baeldung - Spring Boot Guide](https://www.baeldung.com/)
 - [코딩애플 - 쉽게 배우는 Spring Boot & JPA](https://codingapple.com/course/spring-boot-jpa/)
+- [Lombok 공식 문서](https://projectlombok.org/)
