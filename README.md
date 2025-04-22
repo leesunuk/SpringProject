@@ -26,6 +26,7 @@ Supabase(PostgreSQL)를 연동하여 실습 중심으로 개발 중입니다.
 - JPA를 통한 DB 자동 생성 및 테스트  
 - Lombok을 활용한 코드 간결화  
 - DB에 저장된 데이터를 웹 화면에 출력  
+- Java 기본 문법 학습 (접근 제어자, static, 캡슐화 등)
 
 ---
 
@@ -46,7 +47,8 @@ SpringProject/
 │       │   │       ├── Item.java                 # 상품 엔티티
 │       │   │       ├── ItemController.java       # 상품 컨트롤러
 │       │   │       ├── ItemRepository.java       # 상품 Repository
-│       │   │       └── StudyApplication.java     # 메인 클래스
+│       │   │       ├── StudyApplication.java     # 메인 클래스
+│       │   │       └── Study.java                # 클래스 변수/메서드 학습용 클래스
 │       │   └── resources/
 │       │       ├── static/
 │       │       │   └── index.html
@@ -89,6 +91,10 @@ spring.datasource.hikari.maximum-pool-size=3
 |            | JPA Entity (`Item`, `Announcement`) 매핑 성공               |
 | 2025-04-21 | Lombok 적용 (`@Getter`, `@RequiredArgsConstructor`) 도입    |
 |            | 공지 데이터 `/book` 페이지에 출력 구현 (`book.html` 연결)   |
+| 2025-04-22 | Java 클래스 기본 구조 학습:                                 |
+|            | - 클래스 내 변수는 `private` 으로 설정해 외부 직접 접근 차단 |
+|            | - `public` 메서드를 통해 값 변경 (캡슐화 개념 실습)         |
+|            | - `static`은 객체 생성 없이 호출하는 유틸리티용 함수에 사용 |
 
 ---
 
